@@ -1,6 +1,9 @@
 //shuffle deck method
 //instead of deleting the first element, shift them to the end
-
+let player = {
+    name: "Bob",
+    chips: 150
+}
 let deck = [];
 let sum = 0;
 let possibleCards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
@@ -16,6 +19,7 @@ function startGame() {
     document.getElementById("sum-el").textContent = "Sum: " + sum;
     deck.shift();
     deck.shift();
+    document.getElementById("player-el").textContent = player.name + ": $" + player.chips;
 }
 
 function renderGame() {
