@@ -10,7 +10,7 @@ let possibleCards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 createDeck();
 
 function startGame() {
-    
+    createDeck();
     let firstCard = deck[0];
     let secondCard = deck[1];
     sum = firstCard + secondCard;
