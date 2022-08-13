@@ -42,7 +42,7 @@ function getRandomCard() {
 }
 
 function createDeck() {
-    
+    emptyArr(deck);
     while (deck.length < 52) {
         let newCard = getRandomCard();
         if (deck.length >= 4) {
