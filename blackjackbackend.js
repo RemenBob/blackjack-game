@@ -68,6 +68,7 @@ function createDeck() {
     }
 
     cleanDeck();
+    populateArray(possibleCards, 13, 1);
 
 
 }
@@ -105,3 +106,9 @@ function checkBlackjack() {
         return ( "You're out of the game!" );
     }
 } 
+
+function populateArray(arr, len, start) {
+    for ( let i = start; i < start + len; i++ ) {
+        arr.push(i);
+    }
+}
